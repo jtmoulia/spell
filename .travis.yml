@@ -15,7 +15,7 @@ otp_release:
   - 17.0
 sudo: false
 before_script:
-  - pip install crossbar[msgpack]
+  - pip install --user crossbar[msgpack]
 script: mix test.all && mix spell.example.pubsub > /dev/null && mix spell.example.rpc > /dev/null
 after_success:
   - pkill -f crossbar
