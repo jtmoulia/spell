@@ -19,9 +19,3 @@ before_script:
 script: mix test.all && mix spell.example.pubsub > /dev/null && mix spell.example.rpc > /dev/null
 after_success:
   - pkill -f crossbar
-notifications:
-  recipients:
-    - jtmoulia@gmail.com
-    - tanzi.marco@gmail.com
-    - volker.rabe@gmail.com
-    - danmarcab@gmail.com
