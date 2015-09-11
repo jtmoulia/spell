@@ -33,7 +33,7 @@ defmodule Crossbar do
 
   @timeout       1000
 
-  @crossbar_exec "~/.local/bin/crossbar"
+  @crossbar_exec "/home/travis/.local/bin/crossbar"
   @crossbar_path Application.app_dir(:spell, ".crossbar")
   @crossbar_args ["--cbdir", @crossbar_path]
   @crossbar_template Application.app_dir(:spell, "priv/config.json.eex")
