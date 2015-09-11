@@ -1,11 +1,21 @@
 language: elixir
 elixir:
+  - 1.0.5
   - 1.0.4
+  - 1.0.3
+  - 1.0.2
+  - 1.0.1
+  - 1.0.0
 otp_release:
+  - 18.0
+  - 17.5
+  - 17.4
   - 17.3
-sudo: true
+  - 17.1
+  - 17.0
+sudo: false
 before_script:
-  - sudo pip install crossbar[msgpack]
+  - pip install crossbar[msgpack]
 script: mix test.all && mix spell.example.pubsub > /dev/null && mix spell.example.rpc > /dev/null
 after_success:
   - pkill -f crossbar
