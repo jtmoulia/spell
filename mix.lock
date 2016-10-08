@@ -1,6 +1,6 @@
-%{"earmark": {:hex, :earmark, "0.2.1"},
-  "ex_doc": {:hex, :ex_doc, "0.11.4"},
-  "msgpax": {:hex, :msgpax, "0.7.0"},
-  "pbkdf2": {:git, "git://github.com/pma/erlang-pbkdf2.git", "93b290d72b107747c717fb1f55811d2ebc1b73ed", [branch: "master"]},
-  "poison": {:hex, :poison, "1.4.0"},
-  "websocket_client": {:git, "git://github.com/jeremyong/websocket_client.git", "f465f229958293949e4a192bea65a7e47bb2f762", [tag: "v0.7"]}}
+%{"earmark": {:hex, :earmark, "0.2.1", "ba6d26ceb16106d069b289df66751734802777a3cbb6787026dd800ffeb850f3", [:mix], []},
+  "ex_doc": {:hex, :ex_doc, "0.11.4", "a064bdb720594c3745b94709b17ffb834fd858b4e0c1f48f37c0d92700759e02", [:mix], [{:earmark, "~> 0.1.17 or ~> 0.2", [hex: :earmark, optional: true]}]},
+  "msgpax": {:hex, :msgpax, "0.7.0", "437988f46084bbeb6753e0b8c6f86fe4a7e0338413836c450ade567845a61040", [:mix], []},
+  "pbkdf2": {:git, "https://github.com/pma/erlang-pbkdf2.git", "93b290d72b107747c717fb1f55811d2ebc1b73ed", [branch: "master"]},
+  "poison": {:hex, :poison, "1.4.0", "cd5afb9db7f0d19487572fa28185b6d4de647f14235746824e77b3139b79b725", [:mix], []},
+  "websocket_client": {:git, "https://github.com/jeremyong/websocket_client.git", "f465f229958293949e4a192bea65a7e47bb2f762", [tag: "v0.7"]}}
