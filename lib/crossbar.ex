@@ -204,9 +204,9 @@ defmodule Crossbar do
     case await do
       :ok ->
         Logger.debug("Crossbar started.")
-        {:ok, %__MODULE__{port: port,
-                          executable: executable,
-                          arguments: arguments}}
+        {:ok, %Crossbar{port: port,
+                        executable: executable,
+                        arguments: arguments}}
       {:error, reason} ->
         {:error, reason}
     end

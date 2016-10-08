@@ -214,7 +214,7 @@ defmodule Spell.Message do
   end
   defp new(type, code, args) do
     if code == get_code_for_type(type) do
-      {:ok, %__MODULE__{type: type, code: code, args: args}}
+      {:ok, %Spell.Message{type: type, code: code, args: args}}
     else
       {:error, :type_code_mismatch}
     end
