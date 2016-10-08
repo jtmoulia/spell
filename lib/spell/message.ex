@@ -222,17 +222,10 @@ defmodule Spell.Message do
 
   @doc """
   Return a new WAMP id.
-
-  To ensure the uniqueness of the new id we use :crypto.rand_bytes to generate
-  a random seed
-
-  TODO: improve `:random.uniform` using a Mersenne Twister PRNG algorithm
   """
   @spec new_id :: integer
   def new_id do
-    << a :: 32, b :: 32, c :: 32 >> = :crypto.rand_bytes(12)
-    :random.seed(a,b,c)
-    ((:math.pow(2, 53) + 1) |> round |> :random.uniform) - 1
+    ((:math.pow(2, 53) + 1) |> round |> :rand.uniform) - 1
   end
 
   @doc """
